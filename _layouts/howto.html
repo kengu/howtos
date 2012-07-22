@@ -6,10 +6,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="_pages/stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="_pages/stylesheets/pygment_trac.css"/>
+  <link rel="stylesheet" href="/stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="/stylesheets/pygment_trac.css"/>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
+  <script type="text/javascript" src="/javascripts/script.js"></script>
 
   <title>{{ page.title }}</title>
   <meta name="description" content="{{page.tagline}}">
@@ -30,9 +30,13 @@
         <div class="download-bar">
         <div class="inner">
         {% if page.code %}
-          {% if page.code_tar %}<a href="{{ page.code_tar }}" class="download-button tar"><span>Download</span></a>{% endif %}
-          {% if page.code_zip %}<a href="{{ page.code_tar }}" class="download-button zip"><span>Download</span></a>{% endif %}
-          {% if page.code_title %}<a href="{{ page.code_url }}" class="code">{{ page.code_title }}</a>{% endif %}
+          <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}" 
+          	class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}"  
+          	class="download-button zip"><span>Download</span></a>
+          {% if page.code_title %}
+          <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}" class="code">{{ page.code_title }}</a>
+          {% endif %}
         {% endif %}
       	</div>
         <span class="blc"></span><span class="trc"></span>
