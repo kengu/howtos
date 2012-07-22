@@ -1,14 +1,16 @@
 ---
 
 layout: howto
-title: This title will on the top
-published: false
+title: Prevent `git` from asking for credentials on every ``git push``
+category: git
+published: true
 
 ---
 
-# This is a H1
 
-[the clickable text](http://xlson.com/)
+Solution (git 1.7.9+)
+=====================
 
-* Bullet lists are also easy to create
-* One more
+```
+git config --global credential.helper cache
+```
