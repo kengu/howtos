@@ -29,7 +29,9 @@
       <div id="main" role="main">
         <div class="download-bar">
         <div class="inner">
-        {% if page.code %}
+          <a href="{{ site.baseurl }}/index.html">{{ site.title }}</a>&nbsp;     
+	{% if page.code %}
+	  |&nbsp;
           <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}" 
           	class="download-button tar"><span>Download</span></a>
           <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}"  
