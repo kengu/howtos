@@ -45,23 +45,8 @@
         <article class="markdown-body">       
 	{{ content }}
       	{% if page.toc %}		
-	<h1>{{ page.toc_title }}</h1>
-	<ul>
-          {% for post in site.posts %}  
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;<small>(<strong>{{ post.date | date: "%B %e, %Y" }}</strong>)</small></li>
-          {% endfor %}	
-      	</ul>	
-      	<h1>Categories</h1>
-	<ul>
 	{% for category in site.categories %}
-	  <li><a href="{{ site.baseurl }}{{ category | first }}">{{ category | first }}</a></li>
-	{% endfor %}
-	</ul>
-
-	<h1>Articles by Category</h1>
-	<ul>
-	{% for category in site.categories %}
-  	  <li><a href="{{ site.baseurl }}{{ category | first }}">{{ category | first }}</a>
+  	  <p><a href="{{ site.baseurl }}{{ category | first }}">{{ category | first }}</a>
    	    <ul>
     	    {% for posts in category %}
       		{% for post in posts %}
@@ -72,9 +57,10 @@
     	    {% endfor %}
     	    </ul>
     	    <br/>
-  	  </li>
+  	  </p>
 	{% endfor %}
-	</ul>
+	</ul>	
+	
 	{% endif %}
         </article>
       </div>
