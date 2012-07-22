@@ -13,8 +13,8 @@ toc_title: HOWTOs
 
 ---
 
-Welcome!
-==================
+### Welcome!
+
 
 As a developer I often find solutions to problems that I probably will have to solve again 
 later. READMEs does the job in some cases, but are cumbersome to maintain and not easily 
