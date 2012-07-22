@@ -95,18 +95,18 @@ p.tagline {
 }
 
 pre code {
-   padding:0;
-   font-size:12px;
-   background-color:#f8f8ff;
-   border:none;
+   padding: 0;
+   font-size: 12px;
+   background-color: #f8f8ff;
+   border: none;
 }
 
 code  {
-   font-size:12px;
-   background-color:#f8f8ff;
-   color:#444;
-   padding:0 .2em;
-   border:1px solid #dedede;
+   font-size: 12px;
+   background-color: #f8f8ff;
+   color: #444;
+   padding: 0.2em;
+   border: 1px solid #dedede;
 }
 
 #main {
@@ -430,14 +430,14 @@ footer .owner p a {
 }
 
 .markdown-body pre code {
-   background-color:#f8f8f8;
-   font-size:95%;
+   background-color: #f8f8f8;
+   font-size: 95%;
 }
 
-.entry-content code {
-   font-size:90%;
-   background-color:#ddd;
-   padding:0 .2em;
+.entry-body code {
+   font-size: 90%;
+   background-color: #ddd;
+   padding: 0.2em;
 }
 
 .markdown-body ul,
