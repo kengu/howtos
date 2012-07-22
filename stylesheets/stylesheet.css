@@ -105,10 +105,12 @@ code  {
    font-size: 12px;
    background-color: #f8f8ff;
    color: #444;
-   padding: 0.2em;
+   padding: 0.5em;
    border: 1px solid #dedede;
    border-radius: 4px;
 }
+
+strong { font-weight: bold; }   
 
 #main {
   margin-top: 20px;
@@ -438,7 +440,7 @@ footer .owner p a {
 .entry-body code {
    font-size: 90%;
    background-color: #ddd;
-   padding: 0.2em;
+   padding: 0.5em;
 }
 
 .markdown-body ul,
