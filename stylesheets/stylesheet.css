@@ -87,6 +87,13 @@ h1.title {
   box-shadow: 0 0 5px #b1b1b1;
 }
 
+div.tagline {
+  padding: 20px 20px 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
 p.tagline {
   padding: 20px 20px 0;
   color: #fff;
