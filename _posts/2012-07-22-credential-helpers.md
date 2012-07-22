@@ -1,7 +1,7 @@
 ---
 
 layout: howto
-title: Prevent ``git`` from asking for credentials on every ``git push``
+title: Prevent git from asking for credentials on every git push
 
 ---
 
@@ -11,7 +11,9 @@ Solution
 
 With git 1.7.9 or later, just do:
 
-``` git config --global credential.helper cache ```
+``` 
+git config --global credential.helper cache 
+```
 
 which tells git to keep your password cached in memory for (by default) 15 minutes.
 
