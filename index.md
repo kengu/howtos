@@ -13,7 +13,7 @@ toc_title: HOWTOs
 
 ---
 
-Welcome to HOWTOs!
+Welcome!
 ==================
 
 As a developer I often find solutions to problems that I probably will have to solve again 
