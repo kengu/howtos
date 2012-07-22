@@ -414,6 +414,17 @@ footer .owner p a {
   color: #d6d6d6;
 }
 
+.markdown-body pre code {
+   background-color:#f8f8f8;
+   font-size:95%;
+}
+
+.entry-content code {
+   font-size:90%;
+   background-color:#ddd;
+   padding:0 .2em;
+}
+
 .markdown-body ul,
 .markdown-body ol {
   padding-left: 30px;
