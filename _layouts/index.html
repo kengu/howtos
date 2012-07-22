@@ -31,12 +31,12 @@
         <div class="download-bar">
         <div class="inner">
         {% if page.code %}
-          <a href="https://github.com/{{ page.code.owner }}/{{ page.code.repo }}/tarball/{{ page.code.branch }}" 
+          <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}" 
           	class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/{{ page.code.owner }}/{{ page.code.repo }}/tarball/{{ page.code.branch }}"  
+          <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}"  
           	class="download-button zip"><span>Download</span></a>
           {% if page.code_title %}
-          <a href="https://github.com/{{ page.code.owner }}/{{ page.code.repo }}" class="code">{{ page.code_title }}</a>
+          <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}" class="code">{{ page.code_title }}</a>
           {% endif %}
         {% endif %}
       	</div>
@@ -51,13 +51,13 @@
 	<h1>{{ page.toc_title }}</h1>
 	<ul>
           {% for post in site.posts %}  
-          <li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>&nbsp;<small>(<strong>{{ post.date | date: "%B %e, %Y" }}</strong>)</small></li>
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;<small>(<strong>{{ post.date | date: "%B %e, %Y" }}</strong>)</small></li>
           {% endfor %}	
       	</ul>	
       	<h1>Categories</h1>
 	<ul>
 	{% for category in site.categories %}
-	  <li><a href="{{ site.baseurl }}/{{ category | first }}">{{ category | first }}</a></li>
+	  <li><a href="{{ site.baseurl }}{{ category | first }}">{{ category | first }}</a></li>
 	{% endfor %}
 	</ul>
 
@@ -69,7 +69,7 @@
     	    {% for posts in category %}
       		{% for post in posts %}
       		    {% if post.title %}
-        	<li><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>&nbsp;<small>(<strong>{{ post.date | date: "%B %e, %Y" }}</strong>)</li>
+        	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;<small>(<strong>{{ post.date | date: "%B %e, %Y" }}</strong>)</li>
         	    {% endif %}
       		{% endfor %}
     	    {% endfor %}
