@@ -17,5 +17,5 @@ Welcome!
 
 As a developer I often find solutions to problems that I probably will have to solve again 
 later. READMEs does the job in some cases, but are cumbersome to maintain and not easily 
-search or browsed across projects. So I decided to go for GitHub Pages and Jekyll, which 
-combines both worlds nicely. You can read more about [howto make a tutorial here](index.html).
+searched or browsed across projects. So I decided to go for GitHub Pages and Jekyll, which 
+combines both worlds nicely. You can read more about [how I make a HOWTO here](index.html).
