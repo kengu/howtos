@@ -1,8 +1,6 @@
 ---
 
 layout: index
-title: HOWTOs
-tagline: A collection of HOWTO tutorials on selected areas like Eclipse, Linux and GitHub
 code: true
 code_title: View HOWTOs on Github
 code_owner: kengu
