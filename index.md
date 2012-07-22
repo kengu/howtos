@@ -7,7 +7,9 @@ code: true
 code_title: View HOWTOs on Github
 code_url: https://github.com/kengu/howtos
 code_tar: https://github.com/kengu/howtos/tarball/gh-pages
-code_zio: https://github.com/kengu/howtos/zipball/gh-pages
+code_zip: https://github.com/kengu/howtos/zipball/gh-pages
+toc: true
+toc_title: HOWTOs
 
 ---
 
