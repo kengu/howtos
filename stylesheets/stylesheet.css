@@ -107,6 +107,7 @@ code  {
    color: #444;
    padding: 0.2em;
    border: 1px solid #dedede;
+   border-radius: 4px;
 }
 
 #main {
