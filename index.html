@@ -38,7 +38,11 @@
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
-          <p>Test</p>
+          <p>Pages</p>
+        {% for post in site.posts %}  
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p><small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }} . </small></p>			
+        {% endfor %}	
         </article>
       </div>
     </div>
