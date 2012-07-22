@@ -24,7 +24,7 @@
     <header>
       <h1 class="title">{{ page.title }}</h1>
     </header>
-    {{baseurl}}
+    
     <div id="container">
       <p class="tagline">{{ page.tagline }}</p>
       <div id="main" role="main">
@@ -39,6 +39,9 @@
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
+        
+        Baseurl: {{ site.baseurl }} <br />        
+        
 	{{ content }}
       	{% if page.toc %}		
 	<h1>{{ page.toc_title }}</h1>
