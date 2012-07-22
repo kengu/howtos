@@ -29,12 +29,12 @@
       <div id="main" role="main">
         <div class="download-bar">
         <div class="inner">
-          {% if page.download %} 
-          <a href="https://github.com/kengu/howtos/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/kengu/howtos/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/kengu/howtos" class="code">View Howtos on GitHub</a>
-          {% endif %}
-        </div>
+        {% if page.code %}
+          {% if page.code.tar %}<a href="{{ page.code.tar }}" class="download-button tar"><span>Download</span></a>{% endif %}
+          {% if page.code.zip %}<a href="{{ page.code.tar }}" class="download-button zip"><span>Download</span></a>{% endif %}
+          {% if page.code.title %}<a href="{{ page.code.url }}" class="code">{{ page.code.title }}</a>{% endif %}
+        {% endif %}
+      	</div>
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
