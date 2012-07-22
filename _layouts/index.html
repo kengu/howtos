@@ -45,8 +45,9 @@
         <article class="markdown-body">       
 	{{ content }}
       	{% if page.toc %}		
+      	<h1>HOWTOs</h1>
 	{% for category in site.categories %}
-  	  <p><a href="{{ site.baseurl }}{{ category | first }}">{{ category | first }}</a>
+  	  <p>Category:<strong>{{ category | first }}</strong></a>
    	    <ul>
     	    {% for posts in category %}
       		{% for post in posts %}
