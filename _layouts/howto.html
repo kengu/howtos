@@ -11,8 +11,8 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/javascripts/script.js"></script>
 
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{site.tagline}}">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ site.tagline }}">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -22,7 +22,7 @@
 
   <div class="wrapper">
     <header>
-      <h1 class="title">{{ site.title }}</h1>
+      <h1 class="title">{{ page.title }}</h1>
     </header>
     
     <div id="container">
@@ -31,13 +31,13 @@
         <div class="download-bar">
         <div class="inner">
         {% if page.code %}
+          {% if page.code_title %}
+          <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}" class="code">{{ page.code_title }}</a>
+          {% endif %}
           <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}" 
           	class="download-button tar"><span>Download</span></a>
           <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}"  
           	class="download-button zip"><span>Download</span></a>
-          {% if page.code_title %}
-          <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}" class="code">{{ page.code_title }}</a>
-          {% endif %}
         {% endif %}
       	</div>
         <span class="blc"></span><span class="trc"></span>
