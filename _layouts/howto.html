@@ -31,7 +31,7 @@
         <div class="download-bar">
         <div class="inner">
           <a href="{{ site.baseurl }}/index.html">Home</a> 
-          <div style="text-align: right">
+          <div style="text-align: right; display: inline;">
 	{% for post in site.posts limit:1 %}          
           {% if post.previous %}
     	  <span>&nbsp;|&nbsp;</span><a href="{{post.previous.url}}" class="previous">Prev</a>
