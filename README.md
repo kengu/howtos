@@ -1,4 +1,4 @@
-howtos
+HOWTOs
 ======
 
 A collection of HOWTO tutorials on selected areas like Eclipse, Linux, Java etc. 
