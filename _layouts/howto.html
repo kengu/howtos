@@ -33,7 +33,7 @@
           <a href="{{ site.baseurl }}/index.html">Home</a> 
           <div style="text-align: right; display: inline;">
 	{% for post in site.posts %}          
-	{% if page.title = post.title %}
+	{% if page.title == post.title %}
           {% if post.previous %}
     	  <span>&nbsp;|&nbsp;</span><a href="{{ site.baseurl }}/{{post.previous.url}}" class="previous">Prev</a>
   	  {% endif %}
