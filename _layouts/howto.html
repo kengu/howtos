@@ -34,10 +34,10 @@
           <div style="text-align: right; display: inline;">
 	{% for post in site.posts limit:1 %}          
           {% if post.previous %}
-    	  <span>&nbsp;|&nbsp;</span><a href="{{post.previous.url}}" class="previous">Prev</a>
+    	  <span>&nbsp;|&nbsp;</span><a href="{{ site.baseurl }}/{{post.previous.url}}" class="previous">Prev</a>
   	  {% endif %}
 	  {% if post.next %}
-	  <span>&nbsp;|&nbsp;</span><a href="{{post.next.url}}" class="next">Next</a>
+	  <span>&nbsp;|&nbsp;</span><a href="{{ site.baseurl }}/{{post.next.url}}" class="next">Next</a>
 	  {% endif %}
 	{% endfor %}
 	</div>
