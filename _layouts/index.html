@@ -29,7 +29,7 @@
       <p class="tagline">{{ site.tagline }}</p>
       <div id="main" role="main">
         <div class="download-bar">
-        <div class="inner"><br />
+        <div class="inner">
         {% if page.code %}
           <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}/tarball/{{ page.code_branch }}" 
           	class="download-button tar"><span>Download</span></a>
@@ -47,7 +47,7 @@
       	{% if page.toc %}		
       	<h1>HOWTOs</h1>
 	{% for category in site.categories %}
-  	  <div><u>Category</u>: <strong>{{ category | first }}</strong></a>
+  	  <div><u>Category</u>: <strong>{{ category | first }}</strong></a><br />
    	    <ul>
     	    {% for posts in category %}{% for post in posts %}{% if post.title %}
         	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;<small>({{ post.date | date: "%B %e, %Y" }})</li>
