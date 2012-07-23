@@ -47,21 +47,14 @@
       	{% if page.toc %}		
       	<h1>HOWTOs</h1>
 	{% for category in site.categories %}
-  	  <p><u>Category</u>: <strong>{{ category | first }}</strong></a>
+  	  <div><u>Category</u>: <strong>{{ category | first }}</strong></a>
    	    <ul>
-    	    {% for posts in category %}
-      		{% for post in posts %}
-      		    {% if post.title %}
+    	    {% for posts in category %}{% for post in posts %}{% if post.title %}
         	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;<small>({{ post.date | date: "%B %e, %Y" }})</li>
-        	    {% endif %}
-      		{% endfor %}
-    	    {% endfor %}
+       	    {% endif %}{% endfor %}{% endfor %}
     	    </ul>
-    	    <br/>
-  	  </p>
+  	  </div>
 	{% endfor %}
-	</ul>	
-	
 	{% endif %}
         </article>
       </div>
