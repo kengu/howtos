@@ -52,7 +52,7 @@
     	    {% for posts in category %}
       		{% for post in posts %}
       		    {% if post.title %}
-        	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;<small>(<strong>{{ post.date | date: "%B %e, %Y" }}</strong>)</li>
+        	<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;<small>({{ post.date | date: "%B %e, %Y" }})</li>
         	    {% endif %}
       		{% endfor %}
     	    {% endfor %}
