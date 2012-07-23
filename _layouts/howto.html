@@ -31,13 +31,12 @@
         <div class="download-bar">
         <div class="inner">
           <a href="{{ site.baseurl }}/index.html">Home</a> 
-          <div style="text-align: right; display: inline; width: 100%">
+          <div style="text-align: right; display: inline; position: absolute; right: 10px;">
 	{% for post in site.posts %}          
 	{% if page.title == post.title %}{% if page.date == post.date %}          
-    	  <span style="color:white">|</span>
 		<a href="{{ site.baseurl }}/{{post.previous.url}}" class="previous" 
 		{% if !post.previous %} disabled="disabled" {% endif %}>Prev</a>
-	  <span style="color:white">|</span>
+	  <span style="color:gray">|</span>
 	  	<a href="{{ site.baseurl }}/{{post.next.url}}" class="next"
 	  	{% if !post.next %} disabled="disabled" {% endif %}>Next</a>
 	{% endif %}{% endif %}
