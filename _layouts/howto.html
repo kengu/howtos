@@ -31,8 +31,8 @@
         <div class="download-bar">
         <div class="inner">
           <a href="{{ site.baseurl }}/index.html">Home</a> 
-        {% if post.previous %}
-    	  &nbsp;|&nbsp;<a href="{{post.previous.url}}">Prev</a>
+        {% if page.previous %}
+    	  &nbsp;|&nbsp;<a href="{{page.previous.url}}">Prev</a>
   	{% endif %}
 	{% if page.newer %}
 	  &nbsp;|&nbsp;<a href="{{page.newer.url}}">Next</a></li>
