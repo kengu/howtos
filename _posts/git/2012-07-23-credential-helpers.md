@@ -7,7 +7,7 @@ category: git
 ---
 
 
-Solution rewrwer
+Solution
 ========
 
 With git 1.7.9 or later, just do:
