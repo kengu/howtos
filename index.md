@@ -2,7 +2,7 @@
 
 layout: index
 code: true
-code_title: View HOWTOs on Github
+code_title: HOWTOs on Github
 code_owner: kengu
 code_repo: howtos
 code_branch: gh-pages
