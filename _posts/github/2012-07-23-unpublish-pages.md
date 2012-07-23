@@ -1,7 +1,7 @@
 ---
 
 layout: howto
-title: Unpublish [GitHub pages](http://pages.github.com/)
+title: Unpublish <a href="http://pages.github.com">GitHub pages</a>
 category: github
 
 ---
