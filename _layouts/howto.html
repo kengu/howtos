@@ -31,16 +31,16 @@
         <div class="download-bar">
         <div class="inner">
           <a href="{{ site.baseurl }}/index.html">Home</a> 
-          <div class="pagination">
+          <div style="text-align: right">
 	{% for post in site.posts limit:1 %}          
           {% if post.previous %}
-    	  &nbsp;|&nbsp;<a href="{{post.previous.url}}" class="previous">Prev</a>
+    	  <span>&nbsp;|&nbsp;</span><a href="{{post.previous.url}}" class="previous">Prev</a>
   	  {% endif %}
 	  {% if post.next %}
-	  &nbsp;|&nbsp;<a href="{{post.next.url}}" class="next">Next</a>
+	  <span>&nbsp;|&nbsp;</span><a href="{{post.next.url}}" class="next">Next</a>
 	  {% endif %}
 	{% endfor %}
-	  </div>
+	</div>
         {% if page.code %}
           {% if page.code_title %}
           <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}" class="code">{{ page.code_title }}</a>
