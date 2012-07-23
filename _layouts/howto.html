@@ -31,12 +31,13 @@
         <div class="download-bar">
         <div class="inner">
           <a href="{{ site.baseurl }}/index.html">Home</a> 
+          <div class="pagination">
 	{% for post in site.posts limit:1 %}          
           {% if post.previous %}
-    	  &nbsp;|&nbsp;<a href="{{post.previous.url}}">Prev</a>
+    	  &nbsp;|&nbsp;<a href="{{post.previous.url}}" class="previous">Prev</a>
   	  {% endif %}
 	  {% if post.next %}
-	  &nbsp;|&nbsp;<a href="{{post.next.url}}">Next</a>
+	  &nbsp;|&nbsp;<a href="{{post.next.url}}" class="next">Next</a>
 	  {% endif %}
 	{% endfor %}
         {% if page.code %}
