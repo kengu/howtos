@@ -31,14 +31,7 @@
         <div class="download-bar">
         <div class="inner">
           <a href="{{ site.baseurl }}/index.html">Home</a> 
-	{% for post in site.posts limit:1 %}          
-          {% if post.previous %}
-    	  &nbsp;|&nbsp;<a href="{{post.previous.url}}">Prev</a>
-  	  {% endif %}
-	  {% if post.next %}
-	  &nbsp;|&nbsp;<a href="{{post.next.url}}">Next</a>
-	  {% endif %}
-	{% endfor ½}
+
         {% if page.code %}
           {% if page.code_title %}
           <a href="https://github.com/{{ page.code_owner }}/{{ page.code_repo }}" class="code">{{ page.code_title }}</a>
