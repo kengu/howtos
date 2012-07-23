@@ -3,6 +3,11 @@
 layout: howto
 title: Prevent git from asking for credentials on every git push
 category: git
+code: true
+code_title: HOWTOs on Github
+code_owner: kengu
+code_repo: howtos
+code_branch: gh-pages
 
 ---
 
