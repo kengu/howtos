@@ -1,7 +1,7 @@
 ---
 
 layout: howto
-title: Unpublish <a href="http://pages.github.com">GitHub *project* pages</a>
+title: Unpublish project pages
 category: github
 
 ---
@@ -10,7 +10,7 @@ category: github
 Solution
 ========
 
-To unpublish a project page, just delete the remote `gh-pages` branch
+To unpublish <a href="http://pages.github.com">GitHub project pages</a>, just delete the remote `gh-pages` branch:
 
 ``` 
 $ git push origin --delete gh-pages
