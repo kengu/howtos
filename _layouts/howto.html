@@ -33,14 +33,14 @@
           <a href="{{ site.baseurl }}/index.html">Home</a> 
           <div style="text-align: right; display: inline;">
 	{% for post in site.posts %}          
-	{% if page.title == post.title %}
-          {% if post.previous %}
-    	  <span>&nbsp;|&nbsp;</span><a href="{{ site.baseurl }}/{{post.previous.url}}" class="previous">Prev</a>
-  	  {% endif %}
-	  {% if post.next %}
-	  <span>&nbsp;|&nbsp;</span><a href="{{ site.baseurl }}/{{post.next.url}}" class="next">Next</a>
-	  {% endif %}
-	{% endif %}
+	{% if page.title == post.title %}{% if page.date == post.date %}          
+    	  <span style="color:white">&nbsp;|&nbsp;</span>
+		<a href="{{ site.baseurl }}/{{post.previous.url}}" class="previous" 
+		{% if !post.previous %} disabled="disabled" {% endif %}>Prev</a>
+	  <span>&nbsp;|&nbsp;</span>
+	  	<a href="{{ site.baseurl }}/{{post.next.url}}" class="next"
+	  	{% if !post.next %} disabled="disabled" {% endif %}>Next</a>
+	{% endif %}{% endif %}
 	{% endfor %}
 	</div>
         {% if page.code %}
