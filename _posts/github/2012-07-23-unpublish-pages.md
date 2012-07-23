@@ -1,7 +1,7 @@
 ---
 
 layout: howto
-title: Unpublish <a href="http://pages.github.com">GitHub pages</a>
+title: Unpublish <a href="http://pages.github.com">GitHub *project* pages</a>
 category: github
 
 ---
