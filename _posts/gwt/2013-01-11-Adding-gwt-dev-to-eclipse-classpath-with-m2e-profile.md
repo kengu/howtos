@@ -16,6 +16,7 @@ for gwt-maven-plugin prevent this from happening, because Eclipse is not able to
 Eclipse projects managed by m2e, which depend on gwt-dev, need to add a copy of this profile 
 
 ```xml
+
 <profile>
 	<id>m2e</id>
 	<activation>
@@ -44,6 +45,7 @@ Eclipse projects managed by m2e, which depend on gwt-dev, need to add a copy of 
 		</dependency>
 	</dependencies>
 </profile>
+
 ```
 
 to resolve missing imports in Eclipse automatically. This profile should only be activated in 
