@@ -14,6 +14,7 @@ Adding gwt-dev.jar to Eclipse classpath with 'm2e' profile
 Normally, gwt-maven-plugin adds gwt-dev automatically, but current lifecycle-mapping 
 for gwt-maven-plugin prevent this from happening, because Eclipse is not able to handle it. 
 Eclipse projects managed by m2e, which depend on gwt-dev, need to add a copy of this profile 
+<xmp>
 ```xml
 <profile>
 	<id>m2e</id>
@@ -45,6 +46,7 @@ Eclipse projects managed by m2e, which depend on gwt-dev, need to add a copy of 
   
 </profile>
 ```
+</xmp>
 to resolve missing imports in Eclipse automatically. This profile should only be activated in 
 Eclipse, which m2e does every time the incremental builder is run.
 
