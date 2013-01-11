@@ -43,7 +43,6 @@ Eclipse projects managed by m2e, which depend on gwt-dev, need to add a copy of 
 			<artifactId>gwt-dev</artifactId>
 		</dependency>
 	</dependencies>
-
 </profile>
 ```
 to resolve missing imports in Eclipse automatically. This profile should only be activated in 
