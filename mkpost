@@ -1,0 +1,54 @@
+#!/bin/bash
+TITLE=${1}
+CATEGORY=${2}
+
+if [ ! -n "${TITLE}" ]; then
+  echo "USAGE: mkpost title-of-post category"
+  exit 1
+fi
+
+if [ ! -n "${CATEGORY}" ]; then
+  echo "USAGE: mkpost title-of-post category"
+  exit 1
+fi
+
+POSTDIR=./_posts/"${CATEGORY}"
+
+mkdir -p "${POSTDIR}"
+
+
+if [ ! -n "${EDITOR}" ]; then
+  if [ -n "`which vim`" ]; then
+    EDITOR=vim
+  elif [ -n "`which nano`" ]; then
+    EDITOR=nano
+  elif [ -n "`which emacs`" ]; then
+    EDITOR=emacs
+  else
+    echo "Couldn't find an editor. Tried vim, nano, & emacs. Try \`export EDITOR=your-favorite-editor\` "
+  fi
+fi
+
+FILE=`date "+%Y-%m-%d"`-${TITLE}.md
+
+if [ ! -e "${POSTDIR}/${FILE}" ]
+then
+  mkdir -p "${POSTDIR}"
+  cat - > "${POSTDIR}/${FILE}" << EOF
+---
+
+layout: article
+title: `echo ${TITLE} | sed 's/-/ /g'`
+categories: ${CATEGORY}
+updated_at: `date +'%Y-%m-%d'`
+rendered: site.time
+
+---
+
+
+You just created "${POSTDIR}/${FILE}"!
+
+EOF
+fi
+
+$EDITOR "${POSTDIR}/${FILE}"
