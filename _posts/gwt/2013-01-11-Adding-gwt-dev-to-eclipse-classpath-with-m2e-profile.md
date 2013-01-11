@@ -45,6 +45,7 @@ Eclipse projects managed by m2e, which depend on gwt-dev, need to add a copy of 
 	</dependencies>
 </profile>
 ```
+
 to resolve missing imports in Eclipse automatically. This profile should only be activated in 
 Eclipse, which m2e does every time the incremental builder is run.
 
