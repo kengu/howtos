@@ -8,6 +8,9 @@ rendered: site.time
 
 ---
 
+Install Eclipse Java Web Developer Tools
+========================================
+
 This HOWTO is tested on:
 * Eclipse Indigo SR2 (3.7.2)
 
