@@ -16,7 +16,7 @@ for gwt-maven-plugin prevent this from happening, because Eclipse is not able to
 Eclipse projects managed by m2e, which depend on gwt-dev, need to add a copy of this profile 
 
 <xmp>
-```xml
+```
 <profile>
 	<id>m2e</id>
 	<activation>
