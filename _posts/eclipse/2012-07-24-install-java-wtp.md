@@ -1,8 +1,8 @@
 ---
 
-layout: article
+layout: howto
 title: Install Eclipse Java Web Developer Tools
-categories: eclipse
+category: eclipse
 updated_at: 2012-07-24
 rendered: site.time
 
